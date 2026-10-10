@@ -1,0 +1,296 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+<meta charset="UTF-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+<title>Contacto — Inmobiliaria Aurora</title>
+<meta name="description" content="Contáctanos. Estamos en Av. Apoquindo 4711, Las Condes. Tel +56 2 2895 5000. Formulario y horarios de atención." />
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800;900&display=swap" rel="stylesheet">
+<script src="https://cdn.tailwindcss.com"></script>
+<script>
+  tailwind.config = { theme: { extend: { fontFamily: { sans: ['Inter', 'system-ui', 'sans-serif'] } } } }
+</script>
+<link rel="stylesheet" href="css/styles.css" />
+</head>
+<body class="font-sans text-slate-800 antialiased bg-white">
+
+<!-- NAVBAR -->
+<header data-navbar class="fixed top-0 left-0 right-0 z-50 transition-all duration-300 bg-slate-900 navbar-scrolled">
+  <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+    <div class="flex items-center justify-between h-20">
+      <a href="index.html" class="flex items-center gap-2 text-white">
+        <div class="w-10 h-10 bg-amber-500 rounded-lg flex items-center justify-center">
+          <svg class="w-6 h-6 text-slate-900" fill="none" stroke="currentColor" stroke-width="2.5" viewBox="0 0 24 24"><path d="M3 12l9-9 9 9M5 10v10h14V10"/></svg>
+        </div>
+        <span class="font-extrabold text-xl tracking-tight">Aurora<span class="text-amber-400">.</span></span>
+      </a>
+      <nav data-navmenu class="hidden lg:flex items-center gap-8">
+        <a href="index.html"      class="nav-link" data-navlink>Inicio</a>
+        <a href="nosotros.html"   class="nav-link" data-navlink>Nosotros</a>
+        <a href="servicios.html"  class="nav-link" data-navlink>Servicios</a>
+        <a href="galeria.html"    class="nav-link" data-navlink>Galería</a>
+        <a href="horarios.html"   class="nav-link" data-navlink>Horarios</a>
+        <a href="precios.html"    class="nav-link" data-navlink>Precios</a>
+        <a href="contacto.html"   class="nav-link" data-navlink>Contacto</a>
+        <a href="contacto.html"   class="btn-primary !py-2.5">Agendar visita</a>
+      </nav>
+      <button data-burger class="lg:hidden hamburger" aria-label="Menú">
+        <span></span><span></span><span></span>
+      </button>
+    </div>
+  </div>
+  <div data-navmenu class="lg:hidden fixed top-20 right-0 w-72 h-[calc(100vh-5rem)] bg-slate-900 shadow-2xl p-6 transform translate-x-full transition-transform duration-300 z-40 overflow-y-auto">
+    <nav class="flex flex-col gap-2 text-white">
+      <a href="index.html"     class="block py-2 px-3 rounded hover:bg-slate-800" data-navlink>Inicio</a>
+      <a href="nosotros.html"  class="block py-2 px-3 rounded hover:bg-slate-800" data-navlink>Nosotros</a>
+      <a href="servicios.html" class="block py-2 px-3 rounded hover:bg-slate-800" data-navlink>Servicios</a>
+      <a href="galeria.html"   class="block py-2 px-3 rounded hover:bg-slate-800" data-navlink>Galería</a>
+      <a href="horarios.html"  class="block py-2 px-3 rounded hover:bg-slate-800" data-navlink>Horarios</a>
+      <a href="precios.html"   class="block py-2 px-3 rounded hover:bg-slate-800" data-navlink>Precios</a>
+      <a href="contacto.html"  class="block py-2 px-3 rounded hover:bg-slate-800" data-navlink>Contacto</a>
+      <a href="contacto.html"  class="btn-primary mt-4 justify-center">Agendar visita</a>
+    </nav>
+  </div>
+</header>
+
+<!-- HERO -->
+<section class="bg-slate-900 hero-overlay-pattern pt-32 pb-12 relative overflow-hidden">
+  <div class="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8 text-center relative z-10">
+    <span class="inline-block text-amber-400 font-bold text-sm uppercase tracking-widest mb-4 reveal">Estamos para ayudarte</span>
+    <h1 class="text-4xl sm:text-5xl lg:text-6xl font-extrabold text-white mb-6 reveal reveal-delay-1">Ponte en <span class="gold-text">contacto</span></h1>
+    <p class="text-lg lg:text-xl text-slate-300 max-w-3xl mx-auto leading-relaxed reveal reveal-delay-2">
+      Cuéntanos tu proyecto. Respondemos en menos de 24 horas hábiles.
+    </p>
+  </div>
+</section>
+
+<!-- INFO RÁPIDA + FORMULARIO -->
+<section class="py-16 lg:py-20 bg-white">
+  <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+    <div class="grid lg:grid-cols-5 gap-12">
+
+      <!-- INFO -->
+      <aside class="lg:col-span-2 space-y-6 reveal-left">
+
+        <div class="bg-slate-50 p-6 rounded-2xl border border-slate-100">
+          <div class="flex items-start gap-4">
+            <div class="w-12 h-12 bg-amber-500 rounded-lg flex items-center justify-center flex-shrink-0">
+              <svg class="w-6 h-6 text-slate-900" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24"><path d="M12 22s-8-8-8-13a8 8 0 1116 0c0 5-8 13-8 13z"/><circle cx="12" cy="9" r="3"/></svg>
+            </div>
+            <div>
+              <h3 class="font-bold text-slate-900 mb-1">Oficina central</h3>
+              <p class="text-sm text-slate-600">Av. Apoquindo 4711, of. 1205</p>
+              <p class="text-sm text-slate-600">Las Condes, Santiago — Chile</p>
+            </div>
+          </div>
+        </div>
+
+        <div class="bg-slate-50 p-6 rounded-2xl border border-slate-100">
+          <div class="flex items-start gap-4">
+            <div class="w-12 h-12 bg-amber-500 rounded-lg flex items-center justify-center flex-shrink-0">
+              <svg class="w-6 h-6 text-slate-900" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24"><path d="M3 5a2 2 0 012-2h3l2 5-2.5 1.5a11 11 0 005.5 5.5L14.5 12l5 2v3a2 2 0 0 1-2 2A16 16 0 013 5z"/></svg>
+            </div>
+            <div>
+              <h3 class="font-bold text-slate-900 mb-1">Teléfono</h3>
+              <p class="text-sm text-slate-600">+56 2 2895 5000</p>
+              <p class="text-sm text-slate-600">WhatsApp: +56 9 8245 1234</p>
+            </div>
+          </div>
+        </div>
+
+        <div class="bg-slate-50 p-6 rounded-2xl border border-slate-100">
+          <div class="flex items-start gap-4">
+            <div class="w-12 h-12 bg-amber-500 rounded-lg flex items-center justify-center flex-shrink-0">
+              <svg class="w-6 h-6 text-slate-900" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24"><path d="M3 8l9 6 9-6M3 8l9-6 9 6"/></svg>
+            </div>
+            <div>
+              <h3 class="font-bold text-slate-900 mb-1">Email</h3>
+              <p class="text-sm text-slate-600">contacto@aurora.cl</p>
+              <p class="text-sm text-slate-600">ventas@aurora.cl</p>
+            </div>
+          </div>
+        </div>
+
+        <!-- HORARIOS -->
+        <div class="bg-slate-900 text-white p-6 rounded-2xl">
+          <h3 class="font-bold text-lg mb-4 flex items-center gap-2">
+            <svg class="w-5 h-5 text-amber-400" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24"><path d="M12 8v4l3 2M21 12a9 9 0 11-18 0 9 9 0 0118 0z"/></svg>
+            Horarios de atención
+          </h3>
+          <ul class="space-y-2 text-sm">
+            <li class="flex justify-between border-b border-slate-700 pb-2">
+              <span>Lunes a Viernes</span>
+              <span class="font-semibold text-amber-400">09:00 – 19:00</span>
+            </li>
+            <li class="flex justify-between border-b border-slate-700 pb-2">
+              <span>Sábado</span>
+              <span class="font-semibold text-amber-400">10:00 – 14:00</span>
+            </li>
+            <li class="flex justify-between">
+              <span>Domingo</span>
+              <span class="font-semibold text-slate-500">Cerrado</span>
+            </li>
+          </ul>
+          <p class="text-xs text-slate-400 mt-4 leading-relaxed">* En días festivos el horario puede variar. Consulta en redes sociales.</p>
+        </div>
+      </aside>
+
+      <!-- FORMULARIO -->
+      <div class="lg:col-span-3 reveal-right">
+        <div class="bg-white border border-slate-200 rounded-2xl p-7 lg:p-9 shadow-xl">
+          <h2 class="text-2xl lg:text-3xl font-extrabold text-slate-900 mb-2">Envíanos tu consulta</h2>
+          <p class="text-slate-600 mb-7 text-sm">Completa el formulario y un asesor se pondrá en contacto contigo a la brevedad.</p>
+
+          <form data-contact-form class="space-y-5">
+            <div class="grid sm:grid-cols-2 gap-5">
+              <div>
+                <label class="block text-sm font-semibold text-slate-700 mb-1.5">Nombre completo *</label>
+                <input type="text" name="nombre" placeholder="Tu nombre" data-validate required class="form-input"/>
+                <p class="error-text">Por favor ingresa tu nombre.</p>
+              </div>
+              <div>
+                <label class="block text-sm font-semibold text-slate-700 mb-1.5">Email *</label>
+                <input type="email" name="email" placeholder="tu@email.com" data-validate required class="form-input"/>
+                <p class="error-text">Email inválido.</p>
+              </div>
+            </div>
+
+            <div class="grid sm:grid-cols-2 gap-5">
+              <div>
+                <label class="block text-sm font-semibold text-slate-700 mb-1.5">Teléfono *</label>
+                <input type="tel" name="telefono" placeholder="+56 9 1234 5678" data-validate required class="form-input"/>
+                <p class="error-text">Ingresa un teléfono válido (mín. 8 dígitos).</p>
+              </div>
+              <div>
+                <label class="block text-sm font-semibold text-slate-700 mb-1.5">Motivo de contacto</label>
+                <select name="motivo" class="form-input">
+                  <option>Comprar propiedad</option>
+                  <option>Vender propiedad</option>
+                  <option>Arrendar</option>
+                  <option>Tasación</option>
+                  <option>Asesoría legal</option>
+                  <option>Talleres / Capacitación</option>
+                  <option>Otro</option>
+                </select>
+              </div>
+            </div>
+
+            <div>
+              <label class="block text-sm font-semibold text-slate-700 mb-1.5">Mensaje *</label>
+              <textarea name="mensaje" rows="5" placeholder="Cuéntanos en qué podemos ayudarte…" data-validate required class="form-input"></textarea>
+              <p class="error-text">Por favor escribe tu mensaje.</p>
+            </div>
+
+            <div class="flex items-start gap-3">
+              <input type="checkbox" id="acepto" class="mt-0.5 w-4 h-4 text-amber-500 border-slate-300 rounded"/>
+              <label for="acepto" class="text-sm text-slate-600">Acepto la <a href="privacidad.html" class="text-amber-600 underline">política de privacidad</a> y autorizo el contacto comercial.</label>
+            </div>
+
+            <button type="submit" class="btn-primary w-full sm:w-auto px-10 text-lg">
+              Enviar mensaje
+              <svg class="w-5 h-5" fill="none" stroke="currentColor" stroke-width="2.5" viewBox="0 0 24 24"><path d="M5 12h14m-7-7l7 7-7 7"/></svg>
+            </button>
+          </form>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- MAPA -->
+<section class="py-16 lg:py-20 bg-slate-50">
+  <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+    <div class="text-center mb-10 reveal">
+      <span class="text-amber-600 font-bold text-sm uppercase tracking-widest">Encuéntranos</span>
+      <h2 class="text-4xl font-extrabold text-slate-900 mt-3 mb-3">Nuestra ubicación</h2>
+      <div class="section-divider mx-auto mb-4"></div>
+      <p class="text-slate-600 max-w-2xl mx-auto">Te esperamos en nuestra oficina central. Estacionamiento de cortesía para clientes.</p>
+    </div>
+
+    <div class="rounded-2xl overflow-hidden shadow-xl reveal">
+      <iframe
+        src="https://www.openstreetmap.org/export/embed.html?bbox=-70.578%2C-33.412%2C-70.560%2C-33.398&layer=mapnik&marker=-33.405%2C-70.569"
+        width="100%" height="450" style="border:0;" loading="lazy"
+        title="Ubicación Inmobiliaria Aurora">
+      </iframe>
+    </div>
+
+    <div class="grid md:grid-cols-3 gap-5 mt-8">
+      <div class="bg-white p-6 rounded-xl shadow-sm text-center reveal reveal-delay-1">
+        <div class="text-3xl mb-2">🚗</div>
+        <h4 class="font-bold text-slate-900 mb-1">En auto</h4>
+        <p class="text-sm text-slate-600">A 5 min. de Av. Kennedy. Estacionamiento gratis en el edificio.</p>
+      </div>
+      <div class="bg-white p-6 rounded-xl shadow-sm text-center reveal reveal-delay-2">
+        <div class="text-3xl mb-2">🚇</div>
+        <h4 class="font-bold text-slate-900 mb-1">En metro</h4>
+        <p class="text-sm text-slate-600">A 3 min. caminando de estación Manquehue (L1).</p>
+      </div>
+      <div class="bg-white p-6 rounded-xl shadow-sm text-center reveal reveal-delay-3">
+        <div class="text-3xl mb-2">🅿️</div>
+        <h4 class="font-bold text-slate-900 mb-1">Estacionamiento</h4>
+        <p class="text-sm text-slate-600">Subterráneo para clientes. Indicar patente al ingreso.</p>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- TOAST (notificación) -->
+<div data-toast class="toast">
+  <p class="font-bold mb-0.5">¡Mensaje enviado!</p>
+  <p class="text-sm text-slate-300">Nos pondremos en contacto a la brevedad.</p>
+</div>
+
+<!-- FOOTER -->
+<footer class="bg-slate-950 text-slate-400 pt-16 pb-8">
+  <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+    <div class="grid md:grid-cols-2 lg:grid-cols-4 gap-10 mb-12">
+      <div>
+        <a href="index.html" class="flex items-center gap-2 text-white mb-4">
+          <div class="w-10 h-10 bg-amber-500 rounded-lg flex items-center justify-center">
+            <svg class="w-6 h-6 text-slate-900" fill="none" stroke="currentColor" stroke-width="2.5" viewBox="0 0 24 24"><path d="M3 12l9-9 9 9M5 10v10h14V10"/></svg>
+          </div>
+          <span class="font-extrabold text-xl tracking-tight text-white">Aurora<span class="text-amber-400">.</span></span>
+        </a>
+        <p class="text-sm leading-relaxed">Corredora de propiedades con más de 25 años acompañando a familias y empresas en sus decisiones inmobiliarias.</p>
+      </div>
+      <div>
+        <h4 class="text-white font-bold mb-4">Navegación</h4>
+        <ul class="space-y-2 text-sm">
+          <li><a href="index.html" class="hover:text-amber-400 transition">Inicio</a></li>
+          <li><a href="nosotros.html" class="hover:text-amber-400 transition">Nosotros</a></li>
+          <li><a href="servicios.html" class="hover:text-amber-400 transition">Servicios</a></li>
+          <li><a href="galeria.html" class="hover:text-amber-400 transition">Galería</a></li>
+          <li><a href="horarios.html" class="hover:text-amber-400 transition">Horarios</a></li>
+          <li><a href="precios.html" class="hover:text-amber-400 transition">Precios</a></li>
+        </ul>
+      </div>
+      <div>
+        <h4 class="text-white font-bold mb-4">Legal</h4>
+        <ul class="space-y-2 text-sm">
+          <li><a href="privacidad.html" class="hover:text-amber-400 transition">Política de privacidad</a></li>
+          <li><a href="terminos.html" class="hover:text-amber-400 transition">Términos y condiciones</a></li>
+        </ul>
+      </div>
+      <div>
+        <h4 class="text-white font-bold mb-4">Contacto</h4>
+        <ul class="space-y-2 text-sm">
+          <li>Av. Apoquindo 4711, Las Condes</li>
+          <li>+56 2 2895 5000</li>
+          <li>contacto@aurora.cl</li>
+        </ul>
+      </div>
+    </div>
+    <div class="border-t border-slate-800 pt-8 flex flex-col sm:flex-row justify-between items-center gap-2">
+      <p class="text-sm">© <span data-year>2026</span> Inmobiliaria Aurora. Todos los derechos reservados.</p>
+      <p class="text-sm">Diseñado con ♥ en Chile</p>
+    </div>
+  </div>
+</footer>
+
+<script src="js/data.js"></script>
+<script src="js/main.js"></script>
+</body>
+</html>

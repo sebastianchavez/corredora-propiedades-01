@@ -1,0 +1,228 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+<meta charset="UTF-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+<title>Horarios de Talleres — Inmobiliaria Aurora</title>
+<meta name="description" content="Talleres inmobiliarios semanales: inversión, financiamiento, tasación, trámites legales y más. Reserva tu cupo." />
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800;900&display=swap" rel="stylesheet">
+<script src="https://cdn.tailwindcss.com"></script>
+<script>
+  tailwind.config = { theme: { extend: { fontFamily: { sans: ['Inter', 'system-ui', 'sans-serif'] } } } }
+</script>
+<link rel="stylesheet" href="css/styles.css" />
+</head>
+<body class="font-sans text-slate-800 antialiased bg-white">
+
+<!-- NAVBAR -->
+<header data-navbar class="fixed top-0 left-0 right-0 z-50 transition-all duration-300 bg-slate-900 navbar-scrolled">
+  <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+    <div class="flex items-center justify-between h-20">
+      <a href="index.html" class="flex items-center gap-2 text-white">
+        <div class="w-10 h-10 bg-amber-500 rounded-lg flex items-center justify-center">
+          <svg class="w-6 h-6 text-slate-900" fill="none" stroke="currentColor" stroke-width="2.5" viewBox="0 0 24 24"><path d="M3 12l9-9 9 9M5 10v10h14V10"/></svg>
+        </div>
+        <span class="font-extrabold text-xl tracking-tight">Aurora<span class="text-amber-400">.</span></span>
+      </a>
+      <nav data-navmenu class="hidden lg:flex items-center gap-8">
+        <a href="index.html"      class="nav-link" data-navlink>Inicio</a>
+        <a href="nosotros.html"   class="nav-link" data-navlink>Nosotros</a>
+        <a href="servicios.html"  class="nav-link" data-navlink>Servicios</a>
+        <a href="galeria.html"    class="nav-link" data-navlink>Galería</a>
+        <a href="horarios.html"   class="nav-link" data-navlink>Horarios</a>
+        <a href="precios.html"    class="nav-link" data-navlink>Precios</a>
+        <a href="contacto.html"   class="nav-link" data-navlink>Contacto</a>
+        <a href="contacto.html"   class="btn-primary !py-2.5">Agendar visita</a>
+      </nav>
+      <button data-burger class="lg:hidden hamburger" aria-label="Menú">
+        <span></span><span></span><span></span>
+      </button>
+    </div>
+  </div>
+  <div data-navmenu class="lg:hidden fixed top-20 right-0 w-72 h-[calc(100vh-5rem)] bg-slate-900 shadow-2xl p-6 transform translate-x-full transition-transform duration-300 z-40 overflow-y-auto">
+    <nav class="flex flex-col gap-2 text-white">
+      <a href="index.html"     class="block py-2 px-3 rounded hover:bg-slate-800" data-navlink>Inicio</a>
+      <a href="nosotros.html"  class="block py-2 px-3 rounded hover:bg-slate-800" data-navlink>Nosotros</a>
+      <a href="servicios.html" class="block py-2 px-3 rounded hover:bg-slate-800" data-navlink>Servicios</a>
+      <a href="galeria.html"   class="block py-2 px-3 rounded hover:bg-slate-800" data-navlink>Galería</a>
+      <a href="horarios.html"  class="block py-2 px-3 rounded hover:bg-slate-800" data-navlink>Horarios</a>
+      <a href="precios.html"   class="block py-2 px-3 rounded hover:bg-slate-800" data-navlink>Precios</a>
+      <a href="contacto.html"  class="block py-2 px-3 rounded hover:bg-slate-800" data-navlink>Contacto</a>
+      <a href="contacto.html"  class="btn-primary mt-4 justify-center">Agendar visita</a>
+    </nav>
+  </div>
+</header>
+
+<!-- HERO -->
+<section class="bg-slate-900 hero-overlay-pattern pt-32 pb-16 relative overflow-hidden">
+  <div class="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8 text-center relative z-10">
+    <span class="inline-block text-amber-400 font-bold text-sm uppercase tracking-widest mb-4 reveal">Educación inmobiliaria</span>
+    <h1 class="text-4xl sm:text-5xl lg:text-6xl font-extrabold text-white mb-6 reveal reveal-delay-1">Horario de <span class="gold-text">talleres</span></h1>
+    <p class="text-lg lg:text-xl text-slate-300 max-w-3xl mx-auto leading-relaxed reveal reveal-delay-2">
+      Aprende a invertir, comprar y vender propiedades como un profesional. Talleres semanales abiertos a la comunidad, presenciales y online.
+    </p>
+  </div>
+</section>
+
+<!-- INFO RÁPIDA -->
+<section class="py-12 bg-white">
+  <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+    <div class="grid sm:grid-cols-3 gap-6 text-center reveal">
+      <div class="p-5">
+        <div class="text-4xl mb-2">📚</div>
+        <h3 class="font-bold text-slate-900">Gratuito</h3>
+        <p class="text-sm text-slate-600">Todos los talleres son sin costo</p>
+      </div>
+      <div class="p-5">
+        <div class="text-4xl mb-2">🎓</div>
+        <h3 class="font-bold text-slate-900">Certificado</h3>
+        <p class="text-sm text-slate-600">Recibe diploma de asistencia</p>
+      </div>
+      <div class="p-5">
+        <div class="text-4xl mb-2">🤝</div>
+        <h3 class="font-bold text-slate-900">Networking</h3>
+        <p class="text-sm text-slate-600">Conecta con nuestra comunidad</p>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- TALLERES GRID -->
+<section class="py-12 lg:py-16 bg-slate-50 dot-pattern">
+  <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+    <div class="text-center mb-12 reveal">
+      <span class="text-amber-600 font-bold text-sm uppercase tracking-widest">Esta semana</span>
+      <h2 class="text-4xl font-extrabold text-slate-900 mt-3 mb-4">Talleres programados</h2>
+      <div class="section-divider mx-auto"></div>
+    </div>
+    <div data-talleres class="grid md:grid-cols-2 lg:grid-cols-3 gap-7"></div>
+  </div>
+</section>
+
+<!-- CALENDARIO SEMANAL -->
+<section class="py-20 lg:py-28 bg-white">
+  <div class="max-w-6xl mx-auto px-4 sm:px-6 lg:px-8">
+    <div class="text-center mb-12 reveal">
+      <span class="text-amber-600 font-bold text-sm uppercase tracking-widest">Vista semanal</span>
+      <h2 class="text-4xl font-extrabold text-slate-900 mt-3 mb-4">Calendario de la semana</h2>
+      <div class="section-divider mx-auto"></div>
+    </div>
+
+    <div class="overflow-x-auto reveal">
+      <table class="w-full border-collapse">
+        <thead>
+          <tr class="bg-slate-900 text-white">
+            <th class="px-3 py-4 font-semibold text-left rounded-tl-xl">Día</th>
+            <th class="px-3 py-4 font-semibold text-left">Hora</th>
+            <th class="px-3 py-4 font-semibold text-left">Taller</th>
+            <th class="px-3 py-4 font-semibold text-left hidden md:table-cell">Expositor</th>
+            <th class="px-3 py-4 font-semibold text-left hidden lg:table-cell">Modalidad</th>
+            <th class="px-3 py-4 font-semibold text-center rounded-tr-xl">Cupos</th>
+          </tr>
+        </thead>
+        <tbody class="divide-y divide-slate-100" id="tabla-semanal"></tbody>
+      </table>
+    </div>
+  </div>
+</section>
+
+<!-- INSTRUCTORES -->
+<section class="py-20 lg:py-28 bg-slate-50">
+  <div class="max-w-5xl mx-auto px-4 sm:px-6 lg:px-8">
+    <div class="text-center mb-12 reveal">
+      <span class="text-amber-600 font-bold text-sm uppercase tracking-widest">Quiénes enseñan</span>
+      <h2 class="text-4xl font-extrabold text-slate-900 mt-3 mb-4">Nuestros expositores</h2>
+      <div class="section-divider mx-auto"></div>
+    </div>
+    <div data-equipo class="grid sm:grid-cols-2 lg:grid-cols-4 gap-7"></div>
+  </div>
+</section>
+
+<!-- CTA -->
+<section class="bg-amber-500 py-16">
+  <div class="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8 text-center">
+    <h2 class="text-3xl lg:text-4xl font-extrabold text-slate-900 mb-4 reveal">¿Quieres un taller a medida?</h2>
+    <p class="text-slate-800 mb-8 reveal reveal-delay-1">Para empresas o grupos cerrados podemos armar un programa personalizado.</p>
+    <a href="contacto.html" class="inline-flex items-center justify-center gap-2 px-8 py-4 bg-slate-900 hover:bg-slate-800 text-white font-semibold rounded-lg transition reveal reveal-delay-2">
+      Solicitar taller privado →
+    </a>
+  </div>
+</section>
+
+<!-- FOOTER -->
+<footer class="bg-slate-950 text-slate-400 pt-16 pb-8">
+  <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+    <div class="grid md:grid-cols-2 lg:grid-cols-4 gap-10 mb-12">
+      <div>
+        <a href="index.html" class="flex items-center gap-2 text-white mb-4">
+          <div class="w-10 h-10 bg-amber-500 rounded-lg flex items-center justify-center">
+            <svg class="w-6 h-6 text-slate-900" fill="none" stroke="currentColor" stroke-width="2.5" viewBox="0 0 24 24"><path d="M3 12l9-9 9 9M5 10v10h14V10"/></svg>
+          </div>
+          <span class="font-extrabold text-xl tracking-tight text-white">Aurora<span class="text-amber-400">.</span></span>
+        </a>
+        <p class="text-sm leading-relaxed">Corredora de propiedades con más de 25 años acompañando a familias y empresas en sus decisiones inmobiliarias.</p>
+      </div>
+      <div>
+        <h4 class="text-white font-bold mb-4">Navegación</h4>
+        <ul class="space-y-2 text-sm">
+          <li><a href="index.html" class="hover:text-amber-400 transition">Inicio</a></li>
+          <li><a href="nosotros.html" class="hover:text-amber-400 transition">Nosotros</a></li>
+          <li><a href="servicios.html" class="hover:text-amber-400 transition">Servicios</a></li>
+          <li><a href="galeria.html" class="hover:text-amber-400 transition">Galería</a></li>
+          <li><a href="horarios.html" class="hover:text-amber-400 transition">Horarios</a></li>
+          <li><a href="precios.html" class="hover:text-amber-400 transition">Precios</a></li>
+        </ul>
+      </div>
+      <div>
+        <h4 class="text-white font-bold mb-4">Legal</h4>
+        <ul class="space-y-2 text-sm">
+          <li><a href="privacidad.html" class="hover:text-amber-400 transition">Política de privacidad</a></li>
+          <li><a href="terminos.html" class="hover:text-amber-400 transition">Términos y condiciones</a></li>
+        </ul>
+      </div>
+      <div>
+        <h4 class="text-white font-bold mb-4">Contacto</h4>
+        <ul class="space-y-2 text-sm">
+          <li>Av. Apoquindo 4711, Las Condes</li>
+          <li>+56 2 2895 5000</li>
+          <li>contacto@aurora.cl</li>
+        </ul>
+      </div>
+    </div>
+    <div class="border-t border-slate-800 pt-8 flex flex-col sm:flex-row justify-between items-center gap-2">
+      <p class="text-sm">© <span data-year>2026</span> Inmobiliaria Aurora. Todos los derechos reservados.</p>
+      <p class="text-sm">Diseñado con ♥ en Chile</p>
+    </div>
+  </div>
+</footer>
+
+<script src="js/data.js"></script>
+<script src="js/main.js"></script>
+<script>
+  // Tabla semanal renderizada aparte
+  document.addEventListener("DOMContentLoaded", () => {
+    const tb = document.getElementById("tabla-semanal");
+    if (tb && typeof talleres !== "undefined") {
+      tb.innerHTML = talleres.map(t => {
+        const pct = Math.round((t.inscritos / t.cupos) * 100);
+        return `
+          <tr class="hover:bg-amber-50 transition">
+            <td class="px-3 py-4 font-bold text-slate-900">${t.dia}</td>
+            <td class="px-3 py-4 text-slate-700 whitespace-nowrap">${t.hora}</td>
+            <td class="px-3 py-4 text-slate-700">${t.titulo}</td>
+            <td class="px-3 py-4 text-slate-600 hidden md:table-cell">${t.expositor}</td>
+            <td class="px-3 py-4 hidden lg:table-cell">
+              <span class="inline-block text-xs px-2 py-1 rounded-full ${t.modalidad.includes('Online') ? 'bg-blue-100 text-blue-700' : 'bg-amber-100 text-amber-700'} font-medium">${t.modalidad}</span>
+            </td>
+            <td class="px-3 py-4 text-center">
+              <span class="inline-block text-xs font-bold ${pct >= 95 ? 'text-red-600' : pct >= 80 ? 'text-amber-600' : 'text-green-600'}">${t.inscritos}/${t.cupos}</span>
+            </td>
+          </tr>`;
+      }).join("");
+    }
+  });
+</script>
+</body>
+</html>

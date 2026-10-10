@@ -1,0 +1,262 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+<meta charset="UTF-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+<title>Precios y Comisiones — Inmobiliaria Aurora</title>
+<meta name="description" content="Conoce nuestros planes y comisiones por servicios inmobiliarios. Transparentes y competitivos." />
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800;900&display=swap" rel="stylesheet">
+<script src="https://cdn.tailwindcss.com"></script>
+<script>
+  tailwind.config = { theme: { extend: { fontFamily: { sans: ['Inter', 'system-ui', 'sans-serif'] } } } }
+</script>
+<link rel="stylesheet" href="css/styles.css" />
+</head>
+<body class="font-sans text-slate-800 antialiased bg-white">
+
+<!-- NAVBAR -->
+<header data-navbar class="fixed top-0 left-0 right-0 z-50 transition-all duration-300 bg-slate-900 navbar-scrolled">
+  <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+    <div class="flex items-center justify-between h-20">
+      <a href="index.html" class="flex items-center gap-2 text-white">
+        <div class="w-10 h-10 bg-amber-500 rounded-lg flex items-center justify-center">
+          <svg class="w-6 h-6 text-slate-900" fill="none" stroke="currentColor" stroke-width="2.5" viewBox="0 0 24 24"><path d="M3 12l9-9 9 9M5 10v10h14V10"/></svg>
+        </div>
+        <span class="font-extrabold text-xl tracking-tight">Aurora<span class="text-amber-400">.</span></span>
+      </a>
+      <nav data-navmenu class="hidden lg:flex items-center gap-8">
+        <a href="index.html"      class="nav-link" data-navlink>Inicio</a>
+        <a href="nosotros.html"   class="nav-link" data-navlink>Nosotros</a>
+        <a href="servicios.html"  class="nav-link" data-navlink>Servicios</a>
+        <a href="galeria.html"    class="nav-link" data-navlink>Galería</a>
+        <a href="horarios.html"   class="nav-link" data-navlink>Horarios</a>
+        <a href="precios.html"    class="nav-link" data-navlink>Precios</a>
+        <a href="contacto.html"   class="nav-link" data-navlink>Contacto</a>
+        <a href="contacto.html"   class="btn-primary !py-2.5">Agendar visita</a>
+      </nav>
+      <button data-burger class="lg:hidden hamburger" aria-label="Menú">
+        <span></span><span></span><span></span>
+      </button>
+    </div>
+  </div>
+  <div data-navmenu class="lg:hidden fixed top-20 right-0 w-72 h-[calc(100vh-5rem)] bg-slate-900 shadow-2xl p-6 transform translate-x-full transition-transform duration-300 z-40 overflow-y-auto">
+    <nav class="flex flex-col gap-2 text-white">
+      <a href="index.html"     class="block py-2 px-3 rounded hover:bg-slate-800" data-navlink>Inicio</a>
+      <a href="nosotros.html"  class="block py-2 px-3 rounded hover:bg-slate-800" data-navlink>Nosotros</a>
+      <a href="servicios.html" class="block py-2 px-3 rounded hover:bg-slate-800" data-navlink>Servicios</a>
+      <a href="galeria.html"   class="block py-2 px-3 rounded hover:bg-slate-800" data-navlink>Galería</a>
+      <a href="horarios.html"  class="block py-2 px-3 rounded hover:bg-slate-800" data-navlink>Horarios</a>
+      <a href="precios.html"   class="block py-2 px-3 rounded hover:bg-slate-800" data-navlink>Precios</a>
+      <a href="contacto.html"  class="block py-2 px-3 rounded hover:bg-slate-800" data-navlink>Contacto</a>
+      <a href="contacto.html"  class="btn-primary mt-4 justify-center">Agendar visita</a>
+    </nav>
+  </div>
+</header>
+
+<!-- HERO -->
+<section class="bg-slate-900 hero-overlay-pattern pt-32 pb-16 relative overflow-hidden">
+  <div class="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8 text-center relative z-10">
+    <span class="inline-block text-amber-400 font-bold text-sm uppercase tracking-widest mb-4 reveal">Comisiones y planes</span>
+    <h1 class="text-4xl sm:text-5xl lg:text-6xl font-extrabold text-white mb-6 reveal reveal-delay-1">Precios <span class="gold-text">transparentes</span></h1>
+    <p class="text-lg lg:text-xl text-slate-300 max-w-3xl mx-auto leading-relaxed reveal reveal-delay-2">
+      Elige el plan que mejor se adapte a tus necesidades. Sin sorpresas, sin costos ocultos.
+    </p>
+  </div>
+</section>
+
+<!-- PLANES -->
+<section class="py-20 lg:py-28 bg-slate-50 dot-pattern">
+  <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+    <div data-planes class="grid md:grid-cols-3 gap-7 items-start"></div>
+
+    <div class="text-center mt-10 reveal">
+      <p class="text-slate-600 mb-3">¿Necesitas un plan a medida?</p>
+      <a href="contacto.html" class="btn-outline">Solicitar cotización personalizada</a>
+    </div>
+  </div>
+</section>
+
+<!-- TABLA DE COMISIONES -->
+<section class="py-20 lg:py-28 bg-white">
+  <div class="max-w-5xl mx-auto px-4 sm:px-6 lg:px-8">
+    <div class="text-center mb-12 reveal">
+      <span class="text-amber-600 font-bold text-sm uppercase tracking-widest">Detalles</span>
+      <h2 class="text-4xl font-extrabold text-slate-900 mt-3 mb-4">Tabla de comisiones</h2>
+      <div class="section-divider mx-auto mb-5"></div>
+      <p class="text-slate-600 max-w-2xl mx-auto">Comisiones competitivas según el tipo de operación y el valor de la propiedad.</p>
+    </div>
+
+    <div class="overflow-x-auto reveal">
+      <table class="w-full bg-white border border-slate-200 rounded-2xl overflow-hidden">
+        <thead class="bg-slate-900 text-white">
+          <tr>
+            <th class="px-5 py-4 text-left font-semibold">Tipo de operación</th>
+            <th class="px-5 py-4 text-left font-semibold">Rango de precio</th>
+            <th class="px-5 py-4 text-left font-semibold">Comisión</th>
+            <th class="px-5 py-4 text-left font-semibold">Plazo estimado</th>
+          </tr>
+        </thead>
+        <tbody class="divide-y divide-slate-100">
+          <tr class="hover:bg-slate-50 transition">
+            <td class="px-5 py-4 font-medium">Venta residencial</td>
+            <td class="px-5 py-4 text-slate-600">Hasta UF 5.000</td>
+            <td class="px-5 py-4 text-amber-600 font-bold">2,5% + IVA</td>
+            <td class="px-5 py-4 text-slate-600">60–90 días</td>
+          </tr>
+          <tr class="hover:bg-slate-50 transition">
+            <td class="px-5 py-4 font-medium">Venta residencial</td>
+            <td class="px-5 py-4 text-slate-600">UF 5.000 – 15.000</td>
+            <td class="px-5 py-4 text-amber-600 font-bold">2,0% + IVA</td>
+            <td class="px-5 py-4 text-slate-600">90–120 días</td>
+          </tr>
+          <tr class="hover:bg-slate-50 transition">
+            <td class="px-5 py-4 font-medium">Venta residencial</td>
+            <td class="px-5 py-4 text-slate-600">Sobre UF 15.000</td>
+            <td class="px-5 py-4 text-amber-600 font-bold">A convenir</td>
+            <td class="px-5 py-4 text-slate-600">Personalizado</td>
+          </tr>
+          <tr class="hover:bg-slate-50 transition">
+            <td class="px-5 py-4 font-medium">Arriendo residencial</td>
+            <td class="px-5 py-4 text-slate-600">Cualquiera</td>
+            <td class="px-5 py-4 text-amber-600 font-bold">50% del primer mes</td>
+            <td class="px-5 py-4 text-slate-600">15–30 días</td>
+          </tr>
+          <tr class="hover:bg-slate-50 transition">
+            <td class="px-5 py-4 font-medium">Comercial / oficinas</td>
+            <td class="px-5 py-4 text-slate-600">Cualquiera</td>
+            <td class="px-5 py-4 text-amber-600 font-bold">3,0% + IVA</td>
+            <td class="px-5 py-4 text-slate-600">60–180 días</td>
+          </tr>
+          <tr class="hover:bg-slate-50 transition">
+            <td class="px-5 py-4 font-medium">Tasación</td>
+            <td class="px-5 py-4 text-slate-600">Informe escrito</td>
+            <td class="px-5 py-4 text-amber-600 font-bold">UF 3 – 8</td>
+            <td class="px-5 py-4 text-slate-600">5 días hábiles</td>
+          </tr>
+          <tr class="hover:bg-slate-50 transition">
+            <td class="px-5 py-4 font-medium">Asesoría legal</td>
+            <td class="px-5 py-4 text-slate-600">Según complejidad</td>
+            <td class="px-5 py-4 text-amber-600 font-bold">UF 8 – 25</td>
+            <td class="px-5 py-4 text-slate-600">Variable</td>
+          </tr>
+        </tbody>
+      </table>
+    </div>
+
+    <p class="text-xs text-slate-500 mt-4 text-center reveal">
+      * Valores referenciales en UF (Unidad de Fomento). Comisiones incluyen IVA y se pagan sólo al concretarse la operación.
+    </p>
+  </div>
+</section>
+
+<!-- FAQ -->
+<section class="py-20 lg:py-28 bg-slate-50">
+  <div class="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8">
+    <div class="text-center mb-12 reveal">
+      <span class="text-amber-600 font-bold text-sm uppercase tracking-widest">Resolvemos tus dudas</span>
+      <h2 class="text-4xl font-extrabold text-slate-900 mt-3 mb-4">Preguntas frecuentes</h2>
+      <div class="section-divider mx-auto"></div>
+    </div>
+
+    <div class="space-y-3">
+      <details class="bg-white rounded-xl shadow-sm border border-slate-100 p-5 reveal" open>
+        <summary class="font-bold text-slate-900 cursor-pointer flex justify-between items-center">
+          ¿Cuándo se paga la comisión?
+          <span class="text-amber-500 text-xl">+</span>
+        </summary>
+        <p class="text-slate-600 mt-3 leading-relaxed">La comisión se paga únicamente al concretarse la operación (firma de escritura o contrato de arriendo). No cobramos anticipos ni fees por gestión.</p>
+      </details>
+      <details class="bg-white rounded-xl shadow-sm border border-slate-100 p-5 reveal">
+        <summary class="font-bold text-slate-900 cursor-pointer flex justify-between items-center">
+          ¿Puedo cambiar de plan una vez iniciado?
+          <span class="text-amber-500 text-xl">+</span>
+        </summary>
+        <p class="text-slate-600 mt-3 leading-relaxed">Sí, puedes escalar a un plan superior en cualquier momento. Sólo se cobra la diferencia por los servicios adicionales que utilices.</p>
+      </details>
+      <details class="bg-white rounded-xl shadow-sm border border-slate-100 p-5 reveal">
+        <summary class="font-bold text-slate-900 cursor-pointer flex justify-between items-center">
+          ¿Qué incluye el plan Profesional?
+          <span class="text-amber-500 text-xl">+</span>
+        </summary>
+        <p class="text-slate-600 mt-3 leading-relaxed">Incluye todos los servicios del plan Básico más marketing digital, fotografía y video profesional, home staging virtual, asesoría legal y reportes semanales.</p>
+      </details>
+      <details class="bg-white rounded-xl shadow-sm border border-slate-100 p-5 reveal">
+        <summary class="font-bold text-slate-900 cursor-pointer flex justify-between items-center">
+          ¿Trabajan con propiedades en todo Chile?
+          <span class="text-amber-500 text-xl">+</span>
+        </summary>
+        <p class="text-slate-600 mt-3 leading-relaxed">Sí, tenemos operaciones activas en 35 ciudades del país. Para ubicaciones específicas, evaluamos caso a caso.</p>
+      </details>
+      <details class="bg-white rounded-xl shadow-sm border border-slate-100 p-5 reveal">
+        <summary class="font-bold text-slate-900 cursor-pointer flex justify-between items-center">
+          ¿Ofrecen financiamiento?
+          <span class="text-amber-500 text-xl">+</span>
+        </summary>
+          <p class="text-slate-600 mt-3 leading-relaxed">No otorgamos financiamiento directamente. Sin embargo, contamos con alianzas con bancos y financieras para ofrecerte las mejores condiciones de crédito hipotecario.</p>
+      </details>
+    </div>
+  </div>
+</section>
+
+<!-- CTA -->
+<section class="bg-slate-900 hero-overlay-pattern py-16">
+  <div class="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8 text-center">
+    <h2 class="text-3xl lg:text-4xl font-extrabold text-white mb-4 reveal">¿Tienes dudas? Conversemos</h2>
+    <p class="text-slate-300 mb-8 reveal reveal-delay-1">Te entregamos una propuesta personalizada sin compromiso.</p>
+    <a href="contacto.html" class="btn-primary text-lg reveal reveal-delay-2">Cotizar ahora</a>
+  </div>
+</section>
+
+<!-- FOOTER -->
+<footer class="bg-slate-950 text-slate-400 pt-16 pb-8">
+  <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+    <div class="grid md:grid-cols-2 lg:grid-cols-4 gap-10 mb-12">
+      <div>
+        <a href="index.html" class="flex items-center gap-2 text-white mb-4">
+          <div class="w-10 h-10 bg-amber-500 rounded-lg flex items-center justify-center">
+            <svg class="w-6 h-6 text-slate-900" fill="none" stroke="currentColor" stroke-width="2.5" viewBox="0 0 24 24"><path d="M3 12l9-9 9 9M5 10v10h14V10"/></svg>
+          </div>
+          <span class="font-extrabold text-xl tracking-tight text-white">Aurora<span class="text-amber-400">.</span></span>
+        </a>
+        <p class="text-sm leading-relaxed">Corredora de propiedades con más de 25 años acompañando a familias y empresas en sus decisiones inmobiliarias.</p>
+      </div>
+      <div>
+        <h4 class="text-white font-bold mb-4">Navegación</h4>
+        <ul class="space-y-2 text-sm">
+          <li><a href="index.html" class="hover:text-amber-400 transition">Inicio</a></li>
+          <li><a href="nosotros.html" class="hover:text-amber-400 transition">Nosotros</a></li>
+          <li><a href="servicios.html" class="hover:text-amber-400 transition">Servicios</a></li>
+          <li><a href="galeria.html" class="hover:text-amber-400 transition">Galería</a></li>
+          <li><a href="horarios.html" class="hover:text-amber-400 transition">Horarios</a></li>
+          <li><a href="precios.html" class="hover:text-amber-400 transition">Precios</a></li>
+        </ul>
+      </div>
+      <div>
+        <h4 class="text-white font-bold mb-4">Legal</h4>
+        <ul class="space-y-2 text-sm">
+          <li><a href="privacidad.html" class="hover:text-amber-400 transition">Política de privacidad</a></li>
+          <li><a href="terminos.html" class="hover:text-amber-400 transition">Términos y condiciones</a></li>
+        </ul>
+      </div>
+      <div>
+        <h4 class="text-white font-bold mb-4">Contacto</h4>
+        <ul class="space-y-2 text-sm">
+          <li>Av. Apoquindo 4711, Las Condes</li>
+          <li>+56 2 2895 5000</li>
+          <li>contacto@aurora.cl</li>
+        </ul>
+      </div>
+    </div>
+    <div class="border-t border-slate-800 pt-8 flex flex-col sm:flex-row justify-between items-center gap-2">
+      <p class="text-sm">© <span data-year>2026</span> Inmobiliaria Aurora. Todos los derechos reservados.</p>
+      <p class="text-sm">Diseñado con ♥ en Chile</p>
+    </div>
+  </div>
+</footer>
+
+<script src="js/data.js"></script>
+<script src="js/main.js"></script>
+</body>
+</html>
