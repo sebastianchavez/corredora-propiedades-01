@@ -44,14 +44,14 @@
         <a href="contacto.html"   class="btn-primary !py-2.5">Agendar visita</a>
       </nav>
 
-      <button data-burger class="lg:hidden hamburger" aria-label="Menú">
+      <button data-burger class="site-burger" type="button" aria-label="Abrir menú" aria-expanded="false" aria-controls="mobile-menu">
         <span></span><span></span><span></span>
       </button>
     </div>
   </div>
 
   <!-- Menú móvil -->
-  <div data-navmenu class="lg:hidden fixed top-20 right-0 w-72 h-[calc(100vh-5rem)] bg-slate-900 shadow-2xl p-6 transform translate-x-full transition-transform duration-300 z-40 overflow-y-auto">
+  <div data-navmenu id="mobile-menu" class="mobile-menu" inert>
     <nav class="flex flex-col gap-2 text-white">
       <a href="index.html"     class="block py-2 px-3 rounded hover:bg-slate-800" data-navlink>Inicio</a>
       <a href="nosotros.html"  class="block py-2 px-3 rounded hover:bg-slate-800" data-navlink>Nosotros</a>
@@ -66,11 +66,11 @@
 </header>
 
 <!-- ====================== HERO ====================== -->
-<section class="hero-gradient hero-overlay-pattern min-h-screen flex items-center pt-20 relative overflow-hidden">
-  <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-20 lg:py-28 relative z-10 w-full">
+<section class="hero-gradient relative overflow-hidden">
+  <div class="hero-content max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 relative z-10 w-full">
     <div class="grid lg:grid-cols-2 gap-12 items-center">
       <div>
-        <span class="inline-flex items-center gap-2 bg-amber-500/15 border border-amber-500/30 text-amber-300 px-4 py-1.5 rounded-full text-sm font-medium mb-6 reveal">
+        <span class="hero-badge inline-flex items-center gap-2 bg-amber-500/15 border border-amber-500/30 text-amber-300 px-4 py-1.5 rounded-full text-sm font-medium mb-6 reveal">
           <span class="w-2 h-2 bg-amber-400 rounded-full pulse-glow"></span>
           Más de 4.500 clientes confían en nosotros
         </span>
@@ -109,7 +109,7 @@
   </div>
 
   <!-- Scroll indicator -->
-  <div class="absolute bottom-6 left-1/2 -translate-x-1/2 text-white/60 animate-bounce">
+  <div class="hero-scroll absolute bottom-6 left-1/2 -translate-x-1/2 text-white/60 animate-bounce">
     <svg class="w-6 h-6" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24"><path d="M19 14l-7 7m0 0l-7-7m7 7V3"/></svg>
   </div>
 </section>

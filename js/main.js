@@ -61,7 +61,7 @@
       +       '<svg class="w-4 h-4" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24"><path d="M12 22s-8-7-8-13a8 8 0 1116 0c0 6-8 13-8 13z"/><circle cx="12" cy="9" r="3"/></svg>'
       +       ' ' + p.ubicacion
       +     '</p>'
-      +     '<div class="flex items-center gap-4 text-sm text-slate-600 border-t border-slate-100 pt-3 mt-3">'
+      +     '<div class="flex flex-wrap items-center gap-4 text-sm text-slate-600 border-t border-slate-100 pt-3 mt-3">'
       +        iconos.join("")
       +     '</div>'
       +     '<div class="mt-4 flex items-center justify-between">'
@@ -90,20 +90,31 @@
 
     if (burger && navMenus.length) {
       const mobileMenu = navMenus[navMenus.length - 1]; // El último es el panel móvil
+      const desktop = window.matchMedia("(min-width: 1280px)");
+      const setMenuOpen = function (open, restoreFocus) {
+        burger.classList.toggle("is-open", open);
+        burger.setAttribute("aria-expanded", String(open));
+        burger.setAttribute("aria-label", open ? "Cerrar menú" : "Abrir menú");
+        mobileMenu.classList.toggle("is-open", open);
+        mobileMenu.inert = !open;
+        document.body.style.overflow = open ? "hidden" : "";
+        if (restoreFocus) burger.focus();
+      };
       burger.addEventListener("click", function () {
-        burger.classList.toggle("is-open");
-        mobileMenu.classList.toggle("is-open");
-        document.body.style.overflow = mobileMenu.classList.contains("is-open") ? "hidden" : "";
+        setMenuOpen(!mobileMenu.classList.contains("is-open"));
       });
       $$("a", mobileMenu).forEach(function (a) {
         a.addEventListener("click", function () {
-          if (window.innerWidth < 1024) {
-            burger.classList.remove("is-open");
-            mobileMenu.classList.remove("is-open");
-            document.body.style.overflow = "";
-          }
+          setMenuOpen(false);
         });
       });
+      document.addEventListener("keydown", function (e) {
+        if (e.key === "Escape" && mobileMenu.classList.contains("is-open")) setMenuOpen(false, true);
+      });
+      document.addEventListener("click", function (e) {
+        if (!navbar.contains(e.target) && mobileMenu.classList.contains("is-open")) setMenuOpen(false);
+      });
+      desktop.addEventListener("change", function () { setMenuOpen(false); });
     }
 
     /* ---------- 2. Active link ---------- */

@@ -36,12 +36,12 @@
         <a href="contacto.html"   class="nav-link" data-navlink>Contacto</a>
         <a href="contacto.html"   class="btn-primary !py-2.5">Agendar visita</a>
       </nav>
-      <button data-burger class="lg:hidden hamburger" aria-label="Menú">
+      <button data-burger class="site-burger" type="button" aria-label="Abrir menú" aria-expanded="false" aria-controls="mobile-menu">
         <span></span><span></span><span></span>
       </button>
     </div>
   </div>
-  <div data-navmenu class="lg:hidden fixed top-20 right-0 w-72 h-[calc(100vh-5rem)] bg-slate-900 shadow-2xl p-6 transform translate-x-full transition-transform duration-300 z-40 overflow-y-auto">
+  <div data-navmenu id="mobile-menu" class="mobile-menu" inert>
     <nav class="flex flex-col gap-2 text-white">
       <a href="index.html"     class="block py-2 px-3 rounded hover:bg-slate-800" data-navlink>Inicio</a>
       <a href="nosotros.html"  class="block py-2 px-3 rounded hover:bg-slate-800" data-navlink>Nosotros</a>
